@@ -1,0 +1,102 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ArgestaDisplay;
+    src: url(argestadisplay-regular-webfont.woff);
+}
+
+body {
+    background-image: url(green-grass-near-trees-1770809.jpg);
+    font-family: 'ArgestaDisplay';
+    background-size: cover;
+    background-position-y: -87vw;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-weight: 100;
+    letter-spacing: 1.5vw;
+    text-align: center;
+    color: #bb909a;
+    margin-top: 8vw;
+}
+.piano {
+    margin-top: -25vw;
+    margin-left: 5vw;
+    display: flex;
+}
+.wit {
+    display: block;
+    float: left;
+    width: 4vw;
+    height: 16vw;
+    background-color: ivory;
+    border: 1px solid #333;
+}
+
+.zwart {
+    display: block;
+    float: left;
+    width: 2.5vw;
+    height: 10vw;
+    background-color: black;
+    margin-left: -1.25vw;
+    margin-right: -1.25vw;
+    z-index: 2;
+}
+
+.wit.actief {
+background-color: #c2a2a9;}
+
+.zwart.actief {
+    background-color: rgb(51, 44, 44);
+}
+
+    
+  .zwart p {
+    
+    color: #a86a78;
+    margin-top: 6vw;
+
+  }
+
+  .wit p {
+  
+      margin-top: 14vw;
+ 
+  }
+
+  p {
+    text-transform: uppercase;
+      text-align: center;
+      font-size: 1vw;
+      font-weight: 800;
+      color: black;
+  }
+
+  ul li {
+      list-style-type: none;
+  }
+
+  .arrow-back {
+      color: #bb909a;
+      transition: all 1s;
+  }
+
+  .arrow-back:hover {
+      margin-left: -1vw;
+      color: #a86a78;
+  }
+
+  footer p{
+      margin-top: 30vw;
+      color: #bb909a;
+      opacity: .7;
+      text-align: right;
+      font-size: 1.5vw;
+      letter-spacing: .3vw;
+  }
