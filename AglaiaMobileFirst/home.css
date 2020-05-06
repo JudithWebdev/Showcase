@@ -1,0 +1,871 @@
+/*FONTS*/
+@font-face {
+    font-family: Saonara2;
+    src: url(fonts/MADE-SAONARA-2-PERSONAL-USE.woff);
+}
+
+@font-face {
+    font-family: Saonara;
+    src: url(fonts/MADE-SAONARA-PERSONAL-USE.woff);
+}
+
+@font-face {
+    font-family: TomatoSoup;
+    src: url(fonts/TomatoSoup-Regular.woff);
+}
+
+@font-face {
+    font-family: DenseRegular;
+    src: url(fonts/Dense-Regular.woff);
+}
+
+/*MOBILE FIRST*/
+
+body {
+    background-image:  linear-gradient(to right bottom ,
+    #c8dad30e, 
+    #93b5b3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+
+
+/*HEADER*/
+
+h1 {
+    font-family: 'Saonara2', Arial, Helvetica, sans-serif;
+    font-size: 15vw;
+    font-weight: 100;
+    margin-left: 13vw;
+}
+
+h2 {
+    font-family: 'TomatoSoup', Arial, Helvetica, sans-serif;
+   font-weight: lighter;
+    font-size: 14vw;
+    color: black;
+    margin: 0 1em 0 1em;
+    text-align: center;
+  
+}
+
+.ws-h3 {
+  font-family: 'TomatoSoup', Arial, Helvetica, sans-serif;
+  font-size: 30vw;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 2vw;
+  color: white;
+  opacity: 0.5;
+  margin-bottom: 35vh;
+}
+
+h4 {
+  font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-weight: 100;
+  letter-spacing: 5vw;
+  color: white;
+  opacity: 0.3;
+  margin-bottom: 5vw;
+  margin-left: 3vw;
+}
+
+/*NAV*/
+
+nav {
+  margin-bottom: 10vw;
+}
+header nav ul {
+  padding:0;
+  margin-left: 2vw;
+}
+header nav ul li {
+    display: block;
+    list-style: none;
+    margin-bottom: 0.5em;
+}
+
+header nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 100;
+    opacity: 0.5;
+}
+
+header nav ul li .current {
+  opacity: 1;
+  letter-spacing: 3vw;
+}
+
+
+.nav-btn{
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+  }
+
+
+.nav-btn:hover,
+.nav-btn:active {
+  letter-spacing: 3vw;
+}
+
+
+
+/*SUBSRIBE FORM*/
+main {
+  margin-left: 13vw;
+}
+ main form {
+     display: block;
+ }
+
+ main form h5 {
+     font-family: 'Saonara2', Arial, Helvetica, sans-serif;
+     font-size: 9vw;
+     margin-bottom: 0.5em;
+ }
+
+ main form input {
+   margin-top: 4vw;
+   margin-bottom: 4vw;
+   padding-top: 1vw;
+   padding-bottom: 1vw;
+     width: 80%;
+     font-size: 8vw;
+     font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+     letter-spacing: 1vw;
+ }
+
+
+ .button {
+     display: block;
+ }
+
+ ::placeholder {
+     transition: all 3s;
+     font-family: 'TomatoSoup', Arial, Helvetica, sans-serif;
+     font-size: 10vw;
+
+ }
+
+ 
+
+/*SUBSCRIBE BUTTON*/
+div[class*=box] {
+    height: 33.33%;
+    width: 100%; 
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  }
+  
+  
+  
+  .btn {
+    line-height: 3.125em;
+    height: 3.125em;
+    text-align: center;
+    width: 80%;
+    cursor: pointer;
+  }
+  
+  .btn-one {
+    color: black;
+    font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    transition: all 0.3s;
+    position: relative;
+    margin-top: 1em;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 3vw;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+
+  /*WORKSHOPS*/
+
+  .workshops-title {
+    display: inline-block;
+    font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 16vw;
+    letter-spacing: 3vw;
+    margin: 0 0 10vw 0;
+  }
+
+  .workshop {
+    display: inline-block;
+    width: 85%;
+    background-image:
+    linear-gradient(to right bottom ,
+    #ac1c289f, 
+    #2e0404e5),
+    url(img/alcohol-bar-beverage-black-background-312080.jpg);
+  background-size: cover; 
+background-position-x:center ; 
+
+margin-bottom: 10vw
+
+;}
+
+.workshop1 {
+  display: inline-block;
+  width: 85%;
+  background-image:
+  linear-gradient(to bottom ,
+  #99b19ce5, 
+  #004445),
+  url(img/man-drinking-beer-1267290.jpg);
+background-size: cover; 
+background-position-x:center ; 
+background-position-y: center
+
+;}
+
+/*CONTACT*/
+
+address {
+  margin-top: 30vw;
+font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+font-size: 6vw;
+font-style: normal;
+letter-spacing: 1vw;
+}
+
+address a {
+  color: black;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; 
+  height: 0;
+  overflow: hidden;
+  margin-right:13vw;
+}
+.google-maps iframe {
+border: 4px solid #93b5b3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 60%;
+}
+
+#textarea {
+  width: 80%;
+  height: 10em;
+  font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+  font-size: 8vw;
+  border: #93b5b3a6 4px solid;
+  padding-top: 1vw;
+  margin-top: 4vw;
+}
+
+.contact-form input {
+  margin-bottom: 3vw;
+  border: #93b5b3a6 4px solid;
+  padding-top: 1vw;
+}
+
+.contact-title, .workshop-title {
+  color: rgba(0, 0, 0, 0.425);
+  font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 3vw;
+  word-spacing: 0.5vw;
+  font-size: 6vw;
+  margin-bottom: 10vw;
+  text-align: left;
+  margin-right: 9vw;
+  margin-left: 9vw;
+}
+
+.contact-title .hello {
+  display: inline-block;
+  color: black;
+font-weight: bold;}
+
+/*ABOUT*/
+.about-pic {
+  width: 80%;
+  margin-top: 4vw;
+  margin-left: 9vw;
+  filter: grayscale(100%);
+}
+
+.wine-education{
+  color: rgba(0, 0, 0, 0.678);
+  font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  word-spacing: 0.2vw;
+  margin-bottom: 10vw;
+  text-align: left;
+  margin-right: 9vw;
+  margin-left: 9vw;
+  font-size: 8vw;
+  letter-spacing: .3vw;
+  margin-left: -4vw;
+  margin-top: 1vw;
+  margin-right: 4vw;
+}
+
+/*WINES*/
+
+.wine-explore-title {
+  color: #758184;
+  letter-spacing: .3vw;
+  font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  margin-left: -10vw;
+  margin-bottom: 10vw;
+  margin-top: 10vw;
+}
+
+.wine {
+  width: 80vw;
+  height: 80vw;
+  background-color: #93b5b3;
+  margin-bottom: 3vw;
+  margin-left: -4vw;
+}
+
+.wine-title {
+  color: white;
+  opacity: 1;
+  font-weight: 900;
+  width: 100%;
+}
+.wine-titles {
+  font-size: 7vw;
+  letter-spacing: 1vw;
+  margin-bottom: 0;
+  line-height: 8vw;
+  color: black;
+  opacity: 0;
+  
+}
+
+.sauv {
+letter-spacing: 3vw;}
+
+.cab {
+  font-size: 5vw;
+}
+
+
+
+.wine-titles:hover {
+  opacity: 1;
+}
+
+.rebula-wine {
+  background-image: url(img/rebula.png);
+background-size: cover;
+opacity: .6;}
+
+.koz-wine{
+  background-image: url(img/kolzut.png);
+  background-size: cover;
+  opacity: .6;
+}
+
+.wine:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  opacity: 1;
+  background-image: none;
+}
+
+.sauv-wine {
+  background-image: url(img/sauv.png);
+  background-size: cover;
+  opacity: .6;
+  ;
+}
+
+.sauv-wine:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+opacity: 1;}
+
+.cab-wine {
+  background-image: url(img/cab.png);
+background-size: cover;
+opacity: .6;
+}
+.rose-wine {
+  background-image: url(img/rose.png);
+  background-size: cover;
+  opacity: .6;
+}
+
+.aureus-wine {
+  background-image: url(img/aureus.png);
+  background-size: cover;
+  opacity: .6;
+}
+
+
+
+  /*FOOTER*/
+
+  footer {
+    margin-top: 35%;
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-bottom: 3vw;
+
+  }
+  footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  footer p {
+      font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 3vw;
+      opacity: 0.5;
+  }
+
+  i {
+      color: black;
+      opacity: 0.5;
+  }
+
+  i:hover {
+      opacity: 1;
+
+  }
+
+  @media screen and (min-width:750px) {
+   
+    #navbar ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #navbar ul li {
+      display: inline-block;
+      margin-right: 4vw;
+      text-align: right;
+    }
+
+    #navbar ul:first-child {
+      margin-left: 40%;
+    }
+    #navbar ul li a{
+     font-size: 2vw;
+    }
+    .arrow-back {
+      margin-right: 35vw;
+      transition: all 1s;
+      position: fixed;
+      top: 1vw;
+      left: 2vw;
+    }
+
+    .arrow-back:hover {
+      margin-left: -1vw;
+  }
+
+    .nav-btn:hover,
+.nav-btn:active {
+  letter-spacing: .3vw;
+}
+
+header nav ul li .current {
+  opacity: 1;
+  letter-spacing: .5vw;
+}
+
+.wine-education {
+
+  font-size: 4vw;
+  letter-spacing: .3vw;
+  margin-left: -4vw;
+  margin-top: 1vw;
+  margin-right: 8vw;
+}
+
+/*WINES*/
+
+.grid-wines {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.wine {
+  width: 40vw;
+  height: 40vw;
+  background-color: #93b5b3;
+  margin-bottom: 3vw;
+  margin-left: -4vw;
+}
+
+.wine-explore-title {
+  margin-bottom: 10vw;
+}
+
+.wine-title {
+  font-size: 3.2vw;
+  letter-spacing: 1vw;
+  margin-bottom: 0;
+  line-height: 3vw;
+}
+  }
+
+  @media screen and (min-width:1000px) {
+
+    .grid {
+      margin-top: 1%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+      font-size: 11vw;
+      margin-left: 10%;
+    }
+
+    header h2 {
+      font-size: 10vw;
+      margin-left: -10vw;
+      margin-right: 0;
+      margin-top: -6vw;
+      padding: 0;
+      width: 150%;
+    }
+
+    .main-home {
+      margin-top: 2vw;
+      margin-left: 1vw;
+    }
+
+    .form h5 {
+      font-size: 3vw;
+    }
+
+    main form input {
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+
+    }
+
+    .form input {
+      font-size: 1.5vw;
+      display: block;
+      margin-bottom: 1em;
+      width: 60%;
+    }
+
+   ::placeholder {
+     font-size: 1.5vw;
+     font-family: 'Saonara', Arial, Helvetica, sans-serif;
+     text-transform: uppercase;
+   }
+
+ 
+.btn {
+  line-height: 3.125em;
+  height: 3.125em;
+  text-align: center;
+  width: 10em;
+  cursor: pointer;
+}
+
+.btn-one {
+  color: black;
+  font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+
+.form {
+  margin-top: 50%; 
+  margin-left: 40%;
+ }
+ button {
+  font-size: 4vw;
+  border: none;
+    background: transparent;
+    color: black;
+    font-family: 'TomatoSoup', Arial, Helvetica, sans-serif;
+    display: block;
+  }
+  
+  button:hover {
+    color: #010a43;
+    opacity: 0.8;
+    font-weight: bold;
+  }
+  
+  footer p {
+    font-size: 2vw;
+  }
+  footer {
+    margin-top: 5%;
+    margin-bottom: 0;
+    margin-right: -8vw;
+    margin-left: 5%;
+  }
+
+ 
+
+  .ws-h3 {
+    font-family: 'TomatoSoup', Arial, Helvetica, sans-serif;
+    font-size: 17vw;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2vw;
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 20vw;
+  }
+
+  .workshop h4, .workshop1 h4 {
+    font-size: 5vw;
+    letter-spacing: 1vw;
+  }
+
+  .workshops {
+    margin-left: 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -10vw;
+  }
+
+  .workshop1 {
+    transform: scale(.7);
+    height: 88%;
+  }
+
+  .workshop {
+    transform: scale(.7);
+  }
+
+  /*CONTACT*/
+
+  .contact-title, .workshop-title {
+    font-size: 3vw;
+    letter-spacing: 1vw;
+    margin-left: 12vw;
+    margin-top: 9vw;
+    margin-right: 2vw;
+  }
+
+  .workshop-title {
+    line-height: 6vw;
+  }
+
+ 
+
+  .main-contact ::placeholder {
+    transition: all 3s;
+    font-family: 'TomatoSoup', Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    text-transform: capitalize;
+    letter-spacing: 0;
+
+}
+
+.main-contact {
+
+  margin-left: 5vw;
+}
+
+.main-contact form {
+  margin-left: 0;
+  width: 100%;
+
+}
+
+.main-contact form input {
+  padding: 0;
+  font-size: 4vw;
+  letter-spacing: 0;
+}
+
+.main-contact address {
+  font-size: 2vw;
+  letter-spacing: 1vw;
+  margin-top: 20vw;
+
+}
+
+#textarea {
+  height: 50%;
+  font-size: 4vw;
+}
+
+.main-contact .btn-one {
+  transform: scale(1.5);
+  margin-left: 4.5vw;
+  padding-right: 2vw;
+  margin-top: 5vw;
+}
+
+.main-contact {
+  margin-bottom: 15vw;
+}
+
+.google-maps {
+width: 70vw;
+margin-top: 7vw;
+}
+/*ABOUT*/
+.wine-education {
+  font-size: 3vw;
+  margin-left: -8vw;
+  margin-right: 3vw;
+}
+
+/*WINES*/
+
+.wine-explore-title {
+  color: #758184;
+  letter-spacing: .6vw;
+  font-family: 'DenseRegular', Arial, Helvetica, sans-serif;
+  font-size: 3vw;
+  text-transform: uppercase;
+  margin-left: -10vw;
+  margin-bottom: 7vw;
+}
+
+.grid-wines {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.wine {
+  width: 25vw;
+  height: 25vw;
+  background-color: #93b5b3;
+  margin-bottom: 3vw;
+  margin-left: -4vw;
+}
+.wine-title {
+  font-size: 2vw;
+  letter-spacing: 1vw;
+  margin-bottom: 0;
+  line-height: 2vw;
+}
+
+
+
+/*FOOTER*/
+
+footer a i {
+  transform: scale(1.4);
+}
+}
+
+
+
+
+
+
+
+
