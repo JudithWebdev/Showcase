@@ -1,0 +1,360 @@
+
+/*------MOBILE-------*/
+
+/*ALGEMEEN*/
+
+body {
+font-family: 'Roboto', sans-serif;
+color: #222222;
+font-size: 0.9em;
+background-color: white;}
+
+.feiten, .tags, .andere, main {
+   padding: 1em;
+}
+
+
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.2em;
+}
+
+
+/*HEADER*/
+header{
+    background-color: white;
+}
+
+header h1 {
+    padding: 0.5em;
+}
+
+
+.nav {
+    background-color: #474747;
+    padding: 0.5em 1em;
+}
+
+.nav li {
+    list-style-type: none;
+    padding-bottom: 0.5em;
+}
+
+.nav:last-child {
+    padding-bottom: 0;
+}
+
+.nav li a, .tags a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.nav li a:hover {
+    background-color: #ececec;
+    color: initial;
+}
+
+.arrow-back {
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.3vw;
+    margin-left: 6vw;
+    transition: all 1s;
+}
+
+.arrow-back:hover {
+    margin-left: -2vw;
+}
+
+
+
+/*FEITEN*/
+
+.feiten {
+    display: none;
+    padding-top: 1em;
+    background-color:#474747 ;
+    color: white;
+}
+
+/*TAGS*/
+.tags {
+    display: none;
+    background-color: #373737;
+    color: white;
+}
+
+/*ANDERE*/
+.andere {
+    background-color: #272727;
+    color: white;
+}
+
+.andere img {
+    display: none;
+}
+
+h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+
+.andere ul {
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+
+.andere h4 {
+    font-weight: 100;
+    margin-bottom: 0.1em;
+}
+
+.andere ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.andere ul li a:hover {
+    text-decoration: underline;
+}
+
+/*MAIN*/
+
+main img {
+    width: 100%;
+    margin-bottom: 0.7em;
+}
+
+main {
+   margin: 1em 0;
+   line-height: 1.5em;
+   background-color: white;
+}
+
+main h1, main h2, main p {
+    margin-bottom: 1em;
+}
+
+main p em {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    font-size: 1em;
+}
+
+main a {
+    text-decoration: none;
+}
+
+/*------LARGE DEVICE------*/
+
+@media screen and (min-width:640px) {
+
+    /*ALGEMEEN*/
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    body {
+        background-color: red;
+        background-image: url(img/rothko/rothko17.jpg);
+        background-size: cover;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        font-size: 1em;
+        
+    }
+
+   
+
+    /*HEADER*/
+
+    header, .nav {
+        background-color: #222222;
+        color: white;
+    }
+    header {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    header h1 {
+        padding-left: 0;
+    }
+    .headerLD {
+        margin: 0 auto;
+        width: 85%;
+        display: grid;
+        grid-template-columns: 5% 50% 1fr;
+    }
+
+    .nav ul {
+        text-align: right;
+
+    }
+
+    .nav ul li {
+        display: inline-block;
+        margin-top: 1.2em;
+        margin-right: 0.5em;
+    }
+
+    .nav ul li:last-child {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .arrow-back {
+        color: white;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 1.3vw;
+        margin-left: -5vw;
+        transition: all 1s;
+    }
+
+    .arrow-back:hover {
+        margin-left: -6vw;
+    }
+
+
+
+    /*CONTAINER CONTENT*/
+    .contentContainer {
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "main sidebar";
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.199);
+    }
+
+   aside {
+       grid-area: sidebar;
+       background-color: #272727;
+   }
+
+    /*SIDEBAR*/
+    /*FEITEN*/
+    .feiten {
+        display: block;
+        padding-bottom: 2em;
+    }
+
+    .feiten h3, .feiten p {
+        margin-left: 1em;
+    }
+
+    .feiten p {
+        font-size: 1.6vh;
+        margin-bottom: 0.5em;
+    }
+
+    .feiten p time {
+        display: block;
+        margin-top: 0.5em;
+        margin-left: 3em;
+        font-weight: bold;
+    }
+
+    /*TAGS*/
+    .tags {
+        display: block;
+
+    }
+
+    .tagsContent {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .tags label {
+        margin-bottom: 1em;
+        padding: 0.5em;
+        display: block;
+        background-color: #222222;
+        border-radius: 5px;
+        font-size: 1.6vh;
+    }
+
+    .tags label {
+        display: grid;
+        grid-template-columns: 80% 1fr ;
+    }
+
+   .tags label:hover {
+       background-color: #575757;
+   }
+    /*ANDERE*/
+
+    .andere {
+        padding: 2em;
+    }
+
+    .andere ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        "img7 . ";
+        padding-left: 0;
+    }
+    .andere h3 {
+    margin-bottom: 2em;
+    }
+    .andere h4 {
+        display: none;
+    }
+    .andere li {
+        list-style-type: none;
+        margin-right: 0.7em;
+        margin-bottom: 0.7em;
+    }
+
+    .andere ul:nth-child(even) {
+        margin-right: -0.7em;
+    }
+
+    .andere img {
+        display: block;
+        width: 95%;
+        height: 6vw;
+        object-fit: cover;
+        object-position: top;
+        border: 4px solid #FFC0CB;
+    }   
+
+    /*MAIN*/
+
+    main {
+        padding: 4% 7%;
+        margin-top: -0.03em;
+        margin-bottom: 0;
+        grid-area: main;
+    }
+
+    main h1 {
+        line-height: 1.1em;
+    }
+
+
+
+}
+
+
